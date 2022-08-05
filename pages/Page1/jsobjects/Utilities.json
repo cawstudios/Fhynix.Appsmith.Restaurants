@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "Utilities",
+    "pageId": "Page1",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tstoreValues : (name,address,phone_numbers,activity_ids,id,cuisins,image_url) => {\n\t\tstoreValue('name',name);\n\t\tstoreValue('address',address);\n\t\tstoreValue('phone_numbers',Utilities.getText(phone_numbers));\n\t\tstoreValue('activity_ids',activity_ids);\n\t\tstoreValue('id',id);\n\t\tstoreValue('cuisins',cuisins);\n\t\tstoreValue('image_url',image_url);\n\t},\n\tgetText: (arrayForText) => {\n\t\tif(arrayForText.length===0)return \"\";\n\t\tlet result = arrayForText[0];\n\t\tfor(let i=1;i<arrayForText.length;i++){\n\t\t\tresult += \",\";\n\t\t\tresult += arrayForText[i];\n\t\t}\n\t\treturn result;\n\t},\n\tgetUUID: () => {\n\t\tvar result, i, j;\n\t\tresult = '';\n\t\tfor(j=0; j<32; j++) {\n\t\t\tif( j == 8 || j == 12 || j == 16 || j == 20)\n\t\t\t\tresult = result + '-';\n\t\t\ti = Math.floor(Math.random()*16).toString(16).toUpperCase();\n\t\t\tresult = result + i;\n\t\t}\n\t\treturn result.toLowerCase();\n\t},\n\tcloseModalAndRefresh: async(modalSel)=>{\n\t\tconst data = await GetRestaurants.run();\n\t\tif(data){\n\t\t\tcloseModal(modalSel);\n\t\t}\n\t}\n}",
+    "variables": []
+  },
+  "id": "Page1_Utilities",
+  "deleted": false,
+  "gitSyncId": "62d565629a04633267d7497a_62d565629a04633267d74990"
+}
