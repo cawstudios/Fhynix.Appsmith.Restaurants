@@ -57,13 +57,13 @@
                   "widgetName": "Canvas2CopyCopy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 560,
+                  "bottomRow": 700,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 566,
+                  "minHeight": 696,
                   "parentColumnSpace": 1,
                   "dynamicTriggerPathList": [],
                   "leftColumn": 0,
@@ -78,7 +78,8 @@
                   "children": [
                     {
                       "boxShadow": "none",
-                      "widgetName": "Cuisins2",
+                      "widgetName": "PriceRange2",
+                      "dynamicPropertyPathList": [],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -87,8 +88,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 40,
-                      "bottomRow": 49,
+                      "topRow": 37,
+                      "bottomRow": 46,
                       "parentRowSpace": 10,
                       "labelWidth": "9",
                       "autoFocus": false,
@@ -114,7 +115,132 @@
                           "key": "defaultText"
                         }
                       ],
-                      "labelPosition": "Top",
+                      "labelPosition": "Left",
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "isDisabled": false,
+                      "key": "8z1whixclv",
+                      "validation": "",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": true,
+                      "onTextChanged": "{{storeValue('price_range',PriceRange2.text)}}",
+                      "isDeprecated": false,
+                      "rightColumn": 62,
+                      "widgetId": "apldhpwp9h",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "Price range",
+                      "version": 2,
+                      "parentId": "ccuok3tnve",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "iconAlign": "left",
+                      "defaultText": "{{RestaurantTable.selectedRow.price_range}}"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "ZomatoUrl2",
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "topRow": 46,
+                      "bottomRow": 55,
+                      "parentRowSpace": 10,
+                      "labelWidth": "9",
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 8.4375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onTextChanged"
+                        }
+                      ],
+                      "resetOnSubmit": true,
+                      "leftColumn": 3,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "isDisabled": false,
+                      "key": "8z1whixclv",
+                      "validation": "",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": true,
+                      "onTextChanged": "{{storeValue('zomato_url',ZomatoUrl2.text)}}",
+                      "isDeprecated": false,
+                      "rightColumn": 62,
+                      "widgetId": "ebowbtv7h6",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "Zomato url",
+                      "version": 2,
+                      "parentId": "ccuok3tnve",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "iconAlign": "left",
+                      "defaultText": "{{RestaurantTable.selectedRow.zomato_url}}"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Cuisins2",
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "topRow": 55,
+                      "bottomRow": 64,
+                      "parentRowSpace": 10,
+                      "labelWidth": "9",
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 8.4375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onTextChanged"
+                        }
+                      ],
+                      "resetOnSubmit": true,
+                      "leftColumn": 3,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultText"
+                        }
+                      ],
+                      "labelPosition": "Left",
                       "labelStyle": "",
                       "inputType": "TEXT",
                       "isDisabled": false,
@@ -149,8 +275,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 35,
-                      "bottomRow": 39,
+                      "topRow": 28,
+                      "bottomRow": 37,
                       "parentRowSpace": 10,
                       "labelWidth": "9",
                       "autoFocus": false,
@@ -214,10 +340,10 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 23,
-                      "bottomRow": 34,
+                      "topRow": 19,
+                      "bottomRow": 28,
                       "parentRowSpace": 10,
-                      "labelWidth": "9",
+                      "labelWidth": "12",
                       "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
                       "hideCard": false,
@@ -241,7 +367,7 @@
                           "key": "defaultText"
                         }
                       ],
-                      "labelPosition": "Top",
+                      "labelPosition": "Left",
                       "labelStyle": "",
                       "inputType": "TEXT",
                       "isDisabled": false,
@@ -275,8 +401,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 18,
-                      "bottomRow": 22,
+                      "topRow": 15,
+                      "bottomRow": 19,
                       "parentRowSpace": 10,
                       "labelWidth": "9",
                       "autoFocus": false,
@@ -428,8 +554,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 50,
-                      "bottomRow": 54,
+                      "topRow": 64,
+                      "bottomRow": 68,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -472,8 +598,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 50,
-                      "bottomRow": 54,
+                      "topRow": 64,
+                      "bottomRow": 68,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -520,8 +646,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 7,
-                      "bottomRow": 11,
+                      "topRow": 6,
+                      "bottomRow": 10,
                       "parentRowSpace": 10,
                       "labelWidth": "9",
                       "autoFocus": false,
@@ -585,8 +711,8 @@
                         "dropdown",
                         "tags"
                       ],
-                      "topRow": 12,
-                      "bottomRow": 17,
+                      "topRow": 10,
+                      "bottomRow": 15,
                       "parentRowSpace": 10,
                       "labelWidth": "9",
                       "type": "MULTI_SELECT_WIDGET_V2",
@@ -652,7 +778,7 @@
                 }
               ],
               "key": "yeavflwp35",
-              "height": 566,
+              "height": 696,
               "isDeprecated": false,
               "rightColumn": 44,
               "detachFromLayout": true,
@@ -664,7 +790,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "width": 552
+              "width": 626
             },
             {
               "boxShadow": "none",
@@ -697,13 +823,13 @@
                   "widgetName": "Canvas2Copy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 560,
+                  "bottomRow": 740,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 562,
+                  "minHeight": 748,
                   "parentColumnSpace": 1,
                   "dynamicTriggerPathList": [],
                   "leftColumn": 0,
@@ -716,6 +842,126 @@
                     }
                   ],
                   "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "ZomatoUrl",
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "topRow": 38,
+                      "bottomRow": 47,
+                      "parentRowSpace": 10,
+                      "labelWidth": "9",
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 8.4375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onTextChanged"
+                        }
+                      ],
+                      "resetOnSubmit": true,
+                      "leftColumn": 3,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "isDisabled": false,
+                      "key": "8z1whixclv",
+                      "validation": "",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": true,
+                      "onTextChanged": "{{storeValue('zomato_url',ZomatoUrl.text)}}",
+                      "isDeprecated": false,
+                      "rightColumn": 62,
+                      "widgetId": "85ifmf1cva",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "Zomato url",
+                      "version": 2,
+                      "parentId": "frsqc0q52i",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "iconAlign": "left",
+                      "defaultText": ""
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "PriceRange",
+                      "dynamicPropertyPathList": [],
+                      "displayName": "Input",
+                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                      "searchTags": [
+                        "form",
+                        "text input",
+                        "number",
+                        "textarea"
+                      ],
+                      "topRow": 47,
+                      "bottomRow": 56,
+                      "parentRowSpace": 10,
+                      "labelWidth": "9",
+                      "autoFocus": false,
+                      "type": "INPUT_WIDGET_V2",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 8.4375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onTextChanged"
+                        }
+                      ],
+                      "resetOnSubmit": true,
+                      "leftColumn": 3,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "labelStyle": "",
+                      "inputType": "TEXT",
+                      "isDisabled": false,
+                      "key": "8z1whixclv",
+                      "validation": "",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": true,
+                      "onTextChanged": "{{storeValue('price_range',PriceRange.text)}}",
+                      "isDeprecated": false,
+                      "rightColumn": 62,
+                      "widgetId": "gxw8xx5h33",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "Price range",
+                      "version": 2,
+                      "parentId": "frsqc0q52i",
+                      "labelAlignment": "left",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "iconAlign": "left",
+                      "defaultText": ""
+                    },
                     {
                       "boxShadow": "none",
                       "widgetName": "Cuisins",
@@ -732,8 +978,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 40,
-                      "bottomRow": 49,
+                      "topRow": 56,
+                      "bottomRow": 65,
                       "parentRowSpace": 10,
                       "labelWidth": "9",
                       "autoFocus": false,
@@ -756,7 +1002,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "labelPosition": "Top",
+                      "labelPosition": "Left",
                       "labelStyle": "",
                       "inputType": "TEXT",
                       "isDisabled": false,
@@ -790,8 +1036,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 35,
-                      "bottomRow": 39,
+                      "topRow": 29,
+                      "bottomRow": 38,
                       "parentRowSpace": 10,
                       "labelWidth": "9",
                       "autoFocus": false,
@@ -857,10 +1103,10 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 23,
-                      "bottomRow": 34,
+                      "topRow": 20,
+                      "bottomRow": 29,
                       "parentRowSpace": 10,
-                      "labelWidth": "9",
+                      "labelWidth": "13",
                       "autoFocus": false,
                       "type": "INPUT_WIDGET_V2",
                       "hideCard": false,
@@ -881,7 +1127,7 @@
                           "key": "borderRadius"
                         }
                       ],
-                      "labelPosition": "Top",
+                      "labelPosition": "Left",
                       "labelStyle": "",
                       "inputType": "TEXT",
                       "isDisabled": false,
@@ -915,8 +1161,8 @@
                         "number",
                         "textarea"
                       ],
-                      "topRow": 18,
-                      "bottomRow": 22,
+                      "topRow": 16,
+                      "bottomRow": 20,
                       "parentRowSpace": 10,
                       "labelWidth": "9",
                       "autoFocus": false,
@@ -1065,12 +1311,12 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 50,
-                      "bottomRow": 54,
+                      "topRow": 65,
+                      "bottomRow": 69,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
-                      "leftColumn": 8,
+                      "leftColumn": 7,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1083,7 +1329,7 @@
                       "isDisabled": false,
                       "key": "eqzf09fg8p",
                       "isDeprecated": false,
-                      "rightColumn": 24,
+                      "rightColumn": 23,
                       "isDefaultClickDisabled": true,
                       "widgetId": "6x56uwh31l",
                       "buttonStyle": "PRIMARY",
@@ -1109,8 +1355,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 50,
-                      "bottomRow": 54,
+                      "topRow": 65,
+                      "bottomRow": 69,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -1119,7 +1365,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 39,
+                      "leftColumn": 40,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -1132,7 +1378,7 @@
                       "isDisabled": false,
                       "key": "eqzf09fg8p",
                       "isDeprecated": false,
-                      "rightColumn": 55,
+                      "rightColumn": 56,
                       "isDefaultClickDisabled": true,
                       "widgetId": "yx2mwkl3jl",
                       "buttonStyle": "PRIMARY_BUTTON",
@@ -1219,8 +1465,8 @@
                         "dropdown",
                         "tags"
                       ],
-                      "topRow": 12,
-                      "bottomRow": 17,
+                      "topRow": 11,
+                      "bottomRow": 16,
                       "parentRowSpace": 10,
                       "labelWidth": "9",
                       "type": "MULTI_SELECT_WIDGET_V2",
@@ -1283,7 +1529,7 @@
                 }
               ],
               "key": "yeavflwp35",
-              "height": 562,
+              "height": 748,
               "isDeprecated": false,
               "rightColumn": 44,
               "detachFromLayout": true,
@@ -1295,7 +1541,7 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "width": 552
+              "width": 616
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
@@ -1432,6 +1678,12 @@
                         },
                         {
                           "key": "primaryColumns.cuisins.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.zomato_url.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.price_range.computedValue"
                         }
                       ],
                       "leftColumn": 0,
@@ -1476,9 +1728,11 @@
                         "address",
                         "phone_numbers",
                         "image_url",
-                        "activities",
                         "cuisins",
-                        "activity_ids"
+                        "activity_ids",
+                        "zomato_url",
+                        "activities",
+                        "price_range"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
@@ -1676,9 +1930,47 @@
                           "label": "Cuisins",
                           "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.cuisins))}}",
                           "cellBackground": ""
+                        },
+                        "zomato_url": {
+                          "index": 7,
+                          "width": 150,
+                          "id": "zomato_url",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Zomato url",
+                          "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.zomato_url))}}",
+                          "cellBackground": ""
+                        },
+                        "price_range": {
+                          "index": 9,
+                          "width": 150,
+                          "id": "price_range",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Price range",
+                          "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.price_range))}}",
+                          "cellBackground": ""
                         }
                       },
-                      "onRowSelected": "{{Utilities.storeValues(RestaurantTable.selectedRow.name,RestaurantTable.selectedRow.address,RestaurantTable.selectedRow.phone_numbers,RestaurantTable.selectedRow.activity_ids,RestaurantTable.selectedRow.id,RestaurantTable.selectedRow.cuisins,RestaurantTable.selectedRow.image_url)}}",
+                      "onRowSelected": "{{Utilities.storeValues(RestaurantTable.selectedRow.name,RestaurantTable.selectedRow.address,RestaurantTable.selectedRow.phone_numbers,RestaurantTable.selectedRow.activity_ids,RestaurantTable.selectedRow.id,RestaurantTable.selectedRow.cuisins,RestaurantTable.selectedRow.image_url,RestaurantTable.selectedRow.zomato_url,RestaurantTable.selectedRow.price_range)}}",
                       "key": "bo20ohvwjx",
                       "derivedColumns": {
                         "customColumn1": {

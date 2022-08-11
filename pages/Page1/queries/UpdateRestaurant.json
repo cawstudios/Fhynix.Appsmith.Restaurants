@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "UPDATE public.\"Restaurants\" SET\n    name = {{appsmith.store.name}},\n    address = {{appsmith.store.address}},\n    activity_ids = {{appsmith.store.activity_ids}},\n    phone_numbers = {{appsmith.store.phone_numbers.split(',')}},\n\t\timage_url={{appsmith.store.image_url}},\n\t\tcuisins={{appsmith.store.cuisins ? appsmith.store.cuisins?.split(',') : []}}\n  WHERE id = {{appsmith.store.id}};",
+      "body": "UPDATE public.\"Restaurants\" SET\n    name = {{appsmith.store.name}},\n    address = {{appsmith.store.address}},\n    activity_ids = {{appsmith.store.activity_ids}},\n    phone_numbers = {{appsmith.store.phone_numbers.split(',')}},\n\t\timage_url={{appsmith.store.image_url}},\n\t\tcuisins={{appsmith.store.cuisins ? appsmith.store.cuisins?.split(',') : []}},\n\t\tzomato_url = {{appsmith.store.zomato_url}},\n\t\tprice_range = {{appsmith.store.price_range}}\n  WHERE id = {{appsmith.store.id}};",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -41,7 +41,9 @@
       "appsmith.store.id",
       "appsmith.store.image_url",
       "appsmith.store.name",
-      "appsmith.store.phone_numbers.split(',')"
+      "appsmith.store.phone_numbers.split(',')",
+      "appsmith.store.price_range",
+      "appsmith.store.zomato_url"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

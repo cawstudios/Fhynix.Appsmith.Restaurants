@@ -18,7 +18,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "INSERT INTO public.\"Restaurants\" (\"id\", \"name\" , \"address\", \"activity_ids\", \"phone_numbers\",\"cuisins\",\"image_url\", \"longitude\", \"latitude\")\n  VALUES ({{Utilities.getUUID()}},{{appsmith.store.name}},{{appsmith.store.address}}, {{appsmith.store.activity_ids}}, {{appsmith.store.phone_numbers.split(',')}},{{appsmith.store.cuisins ? appsmith.store.cuisins?.split(',') : []}},{{appsmith.store.image_url}}, 1.0, 1.0);",
+      "body": "INSERT INTO public.\"Restaurants\" (\"id\", \"name\" , \"address\", \"activity_ids\", \"phone_numbers\",\"cuisins\",\"image_url\", \"longitude\", \"latitude\",\"zomato_url\",\"price_range\")\n  VALUES ({{Utilities.getUUID()}},{{appsmith.store.name}},{{appsmith.store.address}}, {{appsmith.store.activity_ids}}, {{appsmith.store.phone_numbers.split(',')}},{{appsmith.store.cuisins ? appsmith.store.cuisins?.split(',') : []}},{{appsmith.store.image_url}}, 1.0, 1.0,{{appsmith.store.zomato_url}},{{appsmith.store.price_range}});",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -41,7 +41,9 @@
       "appsmith.store.cuisins ? appsmith.store.cuisins?.split(',') : []",
       "appsmith.store.image_url",
       "appsmith.store.name",
-      "appsmith.store.phone_numbers.split(',')"
+      "appsmith.store.phone_numbers.split(',')",
+      "appsmith.store.price_range",
+      "appsmith.store.zomato_url"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

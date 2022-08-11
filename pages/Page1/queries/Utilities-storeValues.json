@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "(name, address, phone_numbers, activity_ids, id, cuisins, image_url) => {\n  storeValue('name', name);\n  storeValue('address', address);\n  storeValue('phone_numbers', Utilities.getText(phone_numbers));\n  storeValue('activity_ids', activity_ids);\n  storeValue('id', id);\n  storeValue('cuisins', cuisins);\n  storeValue('image_url', image_url);\n}",
+      "body": "(name, address, phone_numbers, activity_ids, id, cuisins, image_url, zomato_url, price_range) => {\n  storeValue('name', name);\n  storeValue('address', address);\n  storeValue('phone_numbers', Utilities.getText(phone_numbers));\n  storeValue('activity_ids', activity_ids);\n  storeValue('id', id);\n  storeValue('cuisins', cuisins);\n  storeValue('image_url', image_url);\n  storeValue('zomato_url', zomato_url);\n  storeValue('price_range', price_range);\n}",
       "jsArguments": [
         {
           "name": "name"
@@ -41,6 +41,12 @@
         },
         {
           "name": "image_url"
+        },
+        {
+          "name": "zomato_url"
+        },
+        {
+          "name": "price_range"
         }
       ],
       "isAsync": true
@@ -55,7 +61,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(name, address, phone_numbers, activity_ids, id, cuisins, image_url) => {\n  storeValue('name', name);\n  storeValue('address', address);\n  storeValue('phone_numbers', Utilities.getText(phone_numbers));\n  storeValue('activity_ids', activity_ids);\n  storeValue('id', id);\n  storeValue('cuisins', cuisins);\n  storeValue('image_url', image_url);\n}"
+      "(name, address, phone_numbers, activity_ids, id, cuisins, image_url, zomato_url, price_range) => {\n  storeValue('name', name);\n  storeValue('address', address);\n  storeValue('phone_numbers', Utilities.getText(phone_numbers));\n  storeValue('activity_ids', activity_ids);\n  storeValue('id', id);\n  storeValue('cuisins', cuisins);\n  storeValue('image_url', image_url);\n  storeValue('zomato_url', zomato_url);\n  storeValue('price_range', price_range);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
