@@ -261,7 +261,7 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "iconAlign": "left",
-                      "defaultText": "{{Utilities.getText(RestaurantTable.selectedRow.cuisins ? RestaurantTable.selectedRow.cuisins : \"\") }}"
+                      "defaultText": "{{Utilities.getText(RestaurantTable.selectedRow.cuisins)}}\n"
                     },
                     {
                       "boxShadow": "none",
