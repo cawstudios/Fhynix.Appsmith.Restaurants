@@ -57,7 +57,7 @@
                   "widgetName": "Canvas2CopyCopy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 700,
+                  "bottomRow": 770,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
@@ -554,12 +554,12 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 64,
-                      "bottomRow": 68,
+                      "topRow": 71,
+                      "bottomRow": 75,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
-                      "leftColumn": 7,
+                      "leftColumn": 28,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -572,7 +572,7 @@
                       "isDisabled": false,
                       "key": "eqzf09fg8p",
                       "isDeprecated": false,
-                      "rightColumn": 23,
+                      "rightColumn": 44,
                       "isDefaultClickDisabled": true,
                       "widgetId": "cazpvgvi49",
                       "buttonStyle": "PRIMARY",
@@ -591,15 +591,19 @@
                       "widgetName": "Button2CopyCopy",
                       "onClick": "{{UpdateRestaurant.run(() => Utilities.closeModalAndRefresh('UpdateModal'), () => showAlert('Updating failed !!','error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "dynamicPropertyPathList": [],
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
                         "click",
                         "submit"
                       ],
-                      "topRow": 64,
-                      "bottomRow": 68,
+                      "topRow": 71,
+                      "bottomRow": 75,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -608,7 +612,7 @@
                           "key": "onClick"
                         }
                       ],
-                      "leftColumn": 40,
+                      "leftColumn": 46,
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
@@ -621,7 +625,7 @@
                       "isDisabled": false,
                       "key": "eqzf09fg8p",
                       "isDeprecated": false,
-                      "rightColumn": 56,
+                      "rightColumn": 62,
                       "isDefaultClickDisabled": true,
                       "widgetId": "f378g3uo6a",
                       "buttonStyle": "PRIMARY_BUTTON",
@@ -760,6 +764,61 @@
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "onOptionChange": "{{storeValue('activity_ids',ActivitiesCopy.selectedOptionValues)}}"
+                    },
+                    {
+                      "widgetName": "IsDeleted",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "defaultCheckedState"
+                        }
+                      ],
+                      "displayName": "Checkbox",
+                      "iconSVG": "/static/media/icon.aaab032b43383e4fa53ffc0ef40c90ef.svg",
+                      "searchTags": [
+                        "boolean"
+                      ],
+                      "topRow": 65,
+                      "bottomRow": 69,
+                      "parentRowSpace": 10,
+                      "type": "CHECKBOX_WIDGET",
+                      "alignWidget": "LEFT",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 9.59375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onCheckChange"
+                        }
+                      ],
+                      "leftColumn": 3,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "accentColor"
+                        },
+                        {
+                          "key": "borderRadius"
+                        },
+                        {
+                          "key": "defaultCheckedState"
+                        }
+                      ],
+                      "labelPosition": "Left",
+                      "onCheckChange": "{{storeValue('is_deleted',IsDeleted.isChecked)}}",
+                      "isDisabled": false,
+                      "key": "38euv92xrr",
+                      "isRequired": false,
+                      "isDeprecated": false,
+                      "rightColumn": 20,
+                      "widgetId": "0kf1i7wme0",
+                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "isVisible": true,
+                      "label": "Is deleted",
+                      "version": 1,
+                      "parentId": "ccuok3tnve",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "defaultCheckedState": "{{RestaurantTable.selectedRow.is_deleted}}"
                     }
                   ],
                   "isDisabled": false,
@@ -1684,6 +1743,9 @@
                         },
                         {
                           "key": "primaryColumns.price_range.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.is_deleted.computedValue"
                         }
                       ],
                       "leftColumn": 0,
@@ -1731,8 +1793,9 @@
                         "cuisins",
                         "activity_ids",
                         "zomato_url",
+                        "price_range",
                         "activities",
-                        "price_range"
+                        "is_deleted"
                       ],
                       "dynamicPropertyPathList": [],
                       "displayName": "Table",
@@ -1968,9 +2031,28 @@
                           "label": "Price range",
                           "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.price_range))}}",
                           "cellBackground": ""
+                        },
+                        "is_deleted": {
+                          "index": 6,
+                          "width": 150,
+                          "id": "is_deleted",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Is deleted",
+                          "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.is_deleted))}}",
+                          "cellBackground": ""
                         }
                       },
-                      "onRowSelected": "{{Utilities.storeValues(RestaurantTable.selectedRow.name,RestaurantTable.selectedRow.address,RestaurantTable.selectedRow.phone_numbers,RestaurantTable.selectedRow.activity_ids,RestaurantTable.selectedRow.id,RestaurantTable.selectedRow.cuisins,RestaurantTable.selectedRow.image_url,RestaurantTable.selectedRow.zomato_url,RestaurantTable.selectedRow.price_range)}}",
+                      "onRowSelected": "{{Utilities.storeValues(RestaurantTable.selectedRow.name,RestaurantTable.selectedRow.address,RestaurantTable.selectedRow.phone_numbers,RestaurantTable.selectedRow.activity_ids,RestaurantTable.selectedRow.id,RestaurantTable.selectedRow.cuisins,RestaurantTable.selectedRow.image_url,RestaurantTable.selectedRow.zomato_url,RestaurantTable.selectedRow.price_range,RestaurantTable.selectedRow.is_deleted)}}",
                       "key": "bo20ohvwjx",
                       "derivedColumns": {
                         "customColumn1": {

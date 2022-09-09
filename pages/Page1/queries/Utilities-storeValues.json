@@ -19,7 +19,7 @@
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "(name, address, phone_numbers, activity_ids, id, cuisins, image_url, zomato_url, price_range) => {\n  storeValue('name', name);\n  storeValue('address', address);\n  storeValue('phone_numbers', Utilities.getText(phone_numbers));\n  storeValue('activity_ids', activity_ids);\n  storeValue('id', id);\n  storeValue('cuisins', cuisins);\n  storeValue('image_url', image_url);\n  storeValue('zomato_url', zomato_url);\n  storeValue('price_range', price_range);\n}",
+      "body": "(name, address, phone_numbers, activity_ids, id, cuisins, image_url, zomato_url, price_range, is_deleted) => {\n  storeValue('name', name);\n  storeValue('address', address);\n  storeValue('phone_numbers', Utilities.getText(phone_numbers));\n  storeValue('activity_ids', activity_ids);\n  storeValue('id', id);\n  storeValue('is_deleted', is_deleted);\n  storeValue('cuisins', cuisins);\n  storeValue('image_url', image_url);\n  storeValue('zomato_url', zomato_url);\n  storeValue('price_range', price_range);\n}",
       "jsArguments": [
         {
           "name": "name"
@@ -47,6 +47,9 @@
         },
         {
           "name": "price_range"
+        },
+        {
+          "name": "is_deleted"
         }
       ],
       "isAsync": true
@@ -61,7 +64,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "(name, address, phone_numbers, activity_ids, id, cuisins, image_url, zomato_url, price_range) => {\n  storeValue('name', name);\n  storeValue('address', address);\n  storeValue('phone_numbers', Utilities.getText(phone_numbers));\n  storeValue('activity_ids', activity_ids);\n  storeValue('id', id);\n  storeValue('cuisins', cuisins);\n  storeValue('image_url', image_url);\n  storeValue('zomato_url', zomato_url);\n  storeValue('price_range', price_range);\n}"
+      "(name, address, phone_numbers, activity_ids, id, cuisins, image_url, zomato_url, price_range, is_deleted) => {\n  storeValue('name', name);\n  storeValue('address', address);\n  storeValue('phone_numbers', Utilities.getText(phone_numbers));\n  storeValue('activity_ids', activity_ids);\n  storeValue('id', id);\n  storeValue('is_deleted', is_deleted);\n  storeValue('cuisins', cuisins);\n  storeValue('image_url', image_url);\n  storeValue('zomato_url', zomato_url);\n  storeValue('price_range', price_range);\n}"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
