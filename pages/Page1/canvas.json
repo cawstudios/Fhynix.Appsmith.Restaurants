@@ -78,7 +78,7 @@
                   "children": [
                     {
                       "boxShadow": "none",
-                      "widgetName": "PriceRange2",
+                      "widgetName": "UPriceRange",
                       "dynamicPropertyPathList": [],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -123,7 +123,7 @@
                       "validation": "",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "onTextChanged": "{{storeValue('price_range',PriceRange2.text)}}",
+                      "onTextChanged": "{{storeValue('price_range',UPriceRange.text)}}",
                       "isDeprecated": false,
                       "rightColumn": 62,
                       "widgetId": "apldhpwp9h",
@@ -141,7 +141,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "ZomatoUrl2",
+                      "widgetName": "UZomatoUrl",
                       "dynamicPropertyPathList": [],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -186,7 +186,7 @@
                       "validation": "",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "onTextChanged": "{{storeValue('zomato_url',ZomatoUrl2.text)}}",
+                      "onTextChanged": "{{storeValue('zomato_url',UZomatoUrl.text)}}",
                       "isDeprecated": false,
                       "rightColumn": 62,
                       "widgetId": "ebowbtv7h6",
@@ -204,7 +204,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Cuisins2",
+                      "widgetName": "UCuisins",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -247,7 +247,7 @@
                       "key": "8z1whixclv",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
-                      "onTextChanged": "{{storeValue('cuisins',Cuisins2.text)}}",
+                      "onTextChanged": "{{storeValue('cuisins',UCuisins.text)}}",
                       "isDeprecated": false,
                       "rightColumn": 62,
                       "widgetId": "kxhyd5tv6o",
@@ -265,7 +265,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "ImageUrl2",
+                      "widgetName": "UImageUrl",
                       "dynamicPropertyPathList": [],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -310,10 +310,10 @@
                       "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "8z1whixclv",
-                      "validation": "{{ImageUrl2.text.length>0}}",
+                      "validation": "{{UImageUrl.text.length>0}}",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "onTextChanged": "{{storeValue('image_url',ImageUrl2.text)}}",
+                      "onTextChanged": "{{storeValue('image_url',UImageUrl.text)}}",
                       "isDeprecated": false,
                       "rightColumn": 62,
                       "widgetId": "bqyrxflz47",
@@ -331,7 +331,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "PhoneNumbersCopy",
+                      "widgetName": "UPhoneNumbers",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -374,7 +374,7 @@
                       "key": "8z1whixclv",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "onTextChanged": "{{storeValue('phone_numbers',PhoneNumbersCopy.text)}}",
+                      "onTextChanged": "{{storeValue('phone_numbers',UPhoneNumbers.text)}}",
                       "isDeprecated": false,
                       "rightColumn": 62,
                       "widgetId": "fspq7vom9o",
@@ -392,7 +392,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "AddressCopy",
+                      "widgetName": "UAddress",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -436,10 +436,10 @@
                       "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "8z1whixclv",
-                      "validation": "{{AddressCopy.text.length>0}}",
+                      "validation": "{{UAddress.text.length>0}}",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "onTextChanged": "{{storeValue('address',AddressCopy.text)}}",
+                      "onTextChanged": "{{storeValue('address',UAddress.text)}}",
                       "isDeprecated": false,
                       "rightColumn": 62,
                       "widgetId": "sbq9wlfua6",
@@ -457,7 +457,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "IconButton2CopyCopy",
+                      "widgetName": "UCloseIcon",
                       "onClick": "{{closeModal('UpdateModal')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Icon Button",
@@ -501,7 +501,7 @@
                       "buttonVariant": "TERTIARY"
                     },
                     {
-                      "widgetName": "InsertCopy",
+                      "widgetName": "UTitle",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "searchTags": [
@@ -545,7 +545,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Button1CopyCopy",
+                      "widgetName": "UCloseButton",
                       "onClick": "{{closeModal('UpdateModal')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -588,7 +588,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Button2CopyCopy",
+                      "widgetName": "UConfirmButton",
                       "onClick": "{{UpdateRestaurant.run(() => Utilities.closeModalAndRefresh('UpdateModal'), () => showAlert('Updating failed !!','error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [
@@ -641,7 +641,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "NameCopy",
+                      "widgetName": "UName",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -685,10 +685,10 @@
                       "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "8z1whixclv",
-                      "validation": "{{NameCopy.text.length >0}}",
+                      "validation": "{{UName.text.length >0}}",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "onTextChanged": "{{storeValue('name',NameCopy.text)}}",
+                      "onTextChanged": "{{storeValue('name',UName.text)}}",
                       "isDeprecated": false,
                       "rightColumn": 62,
                       "widgetId": "c2zx454n5n",
@@ -706,7 +706,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "ActivitiesCopy",
+                      "widgetName": "UActivities",
                       "isFilterable": true,
                       "displayName": "MultiSelect",
                       "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
@@ -763,10 +763,10 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "onOptionChange": "{{storeValue('activity_ids',ActivitiesCopy.selectedOptionValues)}}"
+                      "onOptionChange": "{{storeValue('activity_ids',UActivities.selectedOptionValues)}}"
                     },
                     {
-                      "widgetName": "IsDeleted",
+                      "widgetName": "UIsDeleted",
                       "dynamicPropertyPathList": [
                         {
                           "key": "defaultCheckedState"
@@ -803,7 +803,7 @@
                         }
                       ],
                       "labelPosition": "Left",
-                      "onCheckChange": "{{storeValue('is_deleted',IsDeleted.isChecked)}}",
+                      "onCheckChange": "{{storeValue('is_deleted',UIsDeleted.isChecked)}}",
                       "isDisabled": false,
                       "key": "38euv92xrr",
                       "isRequired": false,
@@ -903,7 +903,7 @@
                   "children": [
                     {
                       "boxShadow": "none",
-                      "widgetName": "ZomatoUrl",
+                      "widgetName": "IZomatoUrl",
                       "dynamicPropertyPathList": [],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -945,7 +945,7 @@
                       "validation": "",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "onTextChanged": "{{storeValue('zomato_url',ZomatoUrl.text)}}",
+                      "onTextChanged": "{{storeValue('zomato_url',IZomatoUrl.text)}}",
                       "isDeprecated": false,
                       "rightColumn": 62,
                       "widgetId": "85ifmf1cva",
@@ -963,7 +963,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "PriceRange",
+                      "widgetName": "IPriceRange",
                       "dynamicPropertyPathList": [],
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
@@ -1005,7 +1005,7 @@
                       "validation": "",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "onTextChanged": "{{storeValue('price_range',PriceRange.text)}}",
+                      "onTextChanged": "{{storeValue('price_range',IPriceRange.text)}}",
                       "isDeprecated": false,
                       "rightColumn": 62,
                       "widgetId": "gxw8xx5h33",
@@ -1023,7 +1023,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Cuisins",
+                      "widgetName": "ICuisins",
                       "dynamicPropertyPathList": [
                         {
                           "key": "resetOnSubmit"
@@ -1068,7 +1068,7 @@
                       "key": "8z1whixclv",
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
-                      "onTextChanged": "{{storeValue('cuisins',Cuisins.text)}}",
+                      "onTextChanged": "{{storeValue('cuisins',ICuisins.text)}}",
                       "isDeprecated": false,
                       "rightColumn": 62,
                       "widgetId": "a4zmujnd9k",
@@ -1086,7 +1086,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "ImageUrl",
+                      "widgetName": "IImageUrl",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -1127,10 +1127,10 @@
                       "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "8z1whixclv",
-                      "validation": "{{ImageUrl.text.length>0}}",
+                      "validation": "{{IImageUrl.text.length>0}}",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "onTextChanged": "{{storeValue('image_url',ImageUrl.text)}}",
+                      "onTextChanged": "{{storeValue('image_url',IImageUrl.text)}}",
                       "isDeprecated": false,
                       "rightColumn": 62,
                       "widgetId": "wr4vgp2247",
@@ -1148,7 +1148,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "PhoneNumbers",
+                      "widgetName": "IPhoneNumbers",
                       "dynamicPropertyPathList": [
                         {
                           "key": "resetOnSubmit"
@@ -1193,7 +1193,7 @@
                       "key": "8z1whixclv",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "onTextChanged": "{{storeValue('phone_numbers',PhoneNumbers.text)}}",
+                      "onTextChanged": "{{storeValue('phone_numbers',IPhoneNumbers.text)}}",
                       "isDeprecated": false,
                       "rightColumn": 62,
                       "widgetId": "01zhmetwne",
@@ -1211,7 +1211,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Address",
+                      "widgetName": "IAddress",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -1252,10 +1252,10 @@
                       "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "8z1whixclv",
-                      "validation": "{{Address.text.length>0}}",
+                      "validation": "{{IAddress.text.length>0}}",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "onTextChanged": "{{storeValue('address',Address.text)}}",
+                      "onTextChanged": "{{storeValue('address',IAddress.text)}}",
                       "isDeprecated": false,
                       "rightColumn": 62,
                       "widgetId": "isretikmpb",
@@ -1273,7 +1273,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "IconButton2Copy",
+                      "widgetName": "ICloseIcon",
                       "onClick": "{{closeModal('InsertModal')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Icon Button",
@@ -1317,7 +1317,7 @@
                       "buttonVariant": "TERTIARY"
                     },
                     {
-                      "widgetName": "Insert",
+                      "widgetName": "ITitle",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "searchTags": [
@@ -1343,10 +1343,10 @@
                       ],
                       "shouldTruncate": false,
                       "truncateButtonColor": "#FFC13D",
-                      "text": "Insert",
+                      "text": "Add Restaurant",
                       "key": "102ck3aavs",
                       "isDeprecated": false,
-                      "rightColumn": 19,
+                      "rightColumn": 39,
                       "textAlign": "LEFT",
                       "widgetId": "rzw8fte8qs",
                       "isVisible": true,
@@ -1361,7 +1361,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Button1Copy",
+                      "widgetName": "ICloseButton",
                       "onClick": "{{closeModal('InsertModal')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Button",
@@ -1404,7 +1404,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Button2Copy",
+                      "widgetName": "IConfirmButton",
                       "onClick": "{{InsertRestaurants.run(() => Utilities.closeModalAndRefresh('InsertModal'), () => showAlert('Creation of restaurant failed !','error'))}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "dynamicPropertyPathList": [],
@@ -1453,7 +1453,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Name",
+                      "widgetName": "IName",
                       "displayName": "Input",
                       "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                       "searchTags": [
@@ -1494,10 +1494,10 @@
                       "inputType": "TEXT",
                       "isDisabled": false,
                       "key": "8z1whixclv",
-                      "validation": "{{Name.text.length>0}}",
+                      "validation": "{{IName.text.length>0}}",
                       "labelTextSize": "0.875rem",
                       "isRequired": true,
-                      "onTextChanged": "{{storeValue('name',Name.text)}}",
+                      "onTextChanged": "{{storeValue('name',IName.text)}}",
                       "isDeprecated": false,
                       "rightColumn": 62,
                       "widgetId": "vryk8xd1cg",
@@ -1515,7 +1515,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "Activities",
+                      "widgetName": "IActivities",
                       "isFilterable": true,
                       "displayName": "MultiSelect",
                       "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
@@ -1569,7 +1569,7 @@
                       "renderMode": "CANVAS",
                       "isLoading": false,
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "onOptionChange": "{{storeValue('activity_ids',Activities.selectedOptionValues)}}"
+                      "onOptionChange": "{{storeValue('activity_ids',IActivities.selectedOptionValues)}}"
                     }
                   ],
                   "isDisabled": false,
@@ -1604,7 +1604,7 @@
             },
             {
               "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-              "widgetName": "Container1",
+              "widgetName": "Container",
               "borderColor": "transparent",
               "isCanvas": true,
               "displayName": "Container",
@@ -1896,7 +1896,7 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Activities",
+                          "label": "IActivities",
                           "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.activities))}}"
                         },
                         "name": {
@@ -1914,7 +1914,7 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Name",
+                          "label": "IName",
                           "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
                           "cellBackground": ""
                         },
@@ -1933,7 +1933,7 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Address",
+                          "label": "IAddress",
                           "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.address))}}",
                           "cellBackground": ""
                         },
@@ -1990,7 +1990,7 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "Cuisins",
+                          "label": "ICuisins",
                           "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.cuisins))}}",
                           "cellBackground": ""
                         },
@@ -2094,7 +2094,7 @@
                       "verticalAlignment": "CENTER"
                     },
                     {
-                      "widgetName": "Text1",
+                      "widgetName": "TableTitle",
                       "displayName": "Text",
                       "iconSVG": "/static/media/icon.97c59b523e6f70ba6f40a10fc2c7c5b5.svg",
                       "searchTags": [
@@ -2140,7 +2140,7 @@
                     },
                     {
                       "boxShadow": "none",
-                      "widgetName": "IconButton1",
+                      "widgetName": "AddIconButton",
                       "onClick": "{{showModal('InsertModal')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Icon Button",
