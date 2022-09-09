@@ -45,6 +45,11 @@
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 12.25,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClose"
+                }
+              ],
               "leftColumn": 20,
               "dynamicBindingPathList": [
                 {
@@ -57,13 +62,13 @@
                   "widgetName": "Canvas2CopyCopy",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 770,
+                  "bottomRow": 860,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": true,
                   "hideCard": true,
                   "shouldScrollContents": false,
-                  "minHeight": 696,
+                  "minHeight": 600,
                   "parentColumnSpace": 1,
                   "dynamicTriggerPathList": [],
                   "leftColumn": 0,
@@ -78,385 +83,6 @@
                   "children": [
                     {
                       "boxShadow": "none",
-                      "widgetName": "UPriceRange",
-                      "dynamicPropertyPathList": [],
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 37,
-                      "bottomRow": 46,
-                      "parentRowSpace": 10,
-                      "labelWidth": "9",
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 8.4375,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onTextChanged"
-                        }
-                      ],
-                      "resetOnSubmit": true,
-                      "leftColumn": 3,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "defaultText"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "isDisabled": false,
-                      "key": "8z1whixclv",
-                      "validation": "",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": true,
-                      "onTextChanged": "{{storeValue('price_range',UPriceRange.text)}}",
-                      "isDeprecated": false,
-                      "rightColumn": 62,
-                      "widgetId": "apldhpwp9h",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "label": "Price range",
-                      "version": 2,
-                      "parentId": "ccuok3tnve",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "iconAlign": "left",
-                      "defaultText": "{{RestaurantTable.selectedRow.price_range}}"
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "UZomatoUrl",
-                      "dynamicPropertyPathList": [],
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 46,
-                      "bottomRow": 55,
-                      "parentRowSpace": 10,
-                      "labelWidth": "9",
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 8.4375,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onTextChanged"
-                        }
-                      ],
-                      "resetOnSubmit": true,
-                      "leftColumn": 3,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "defaultText"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "isDisabled": false,
-                      "key": "8z1whixclv",
-                      "validation": "",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": true,
-                      "onTextChanged": "{{storeValue('zomato_url',UZomatoUrl.text)}}",
-                      "isDeprecated": false,
-                      "rightColumn": 62,
-                      "widgetId": "ebowbtv7h6",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "label": "Zomato url",
-                      "version": 2,
-                      "parentId": "ccuok3tnve",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "iconAlign": "left",
-                      "defaultText": "{{RestaurantTable.selectedRow.zomato_url}}"
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "UCuisins",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 55,
-                      "bottomRow": 64,
-                      "parentRowSpace": 10,
-                      "labelWidth": "9",
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 8.4375,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onTextChanged"
-                        }
-                      ],
-                      "resetOnSubmit": true,
-                      "leftColumn": 3,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "defaultText"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "isDisabled": false,
-                      "key": "8z1whixclv",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "onTextChanged": "{{storeValue('cuisins',UCuisins.text)}}",
-                      "isDeprecated": false,
-                      "rightColumn": 62,
-                      "widgetId": "kxhyd5tv6o",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "label": "Cuisins",
-                      "version": 2,
-                      "parentId": "ccuok3tnve",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "iconAlign": "left",
-                      "defaultText": "{{Utilities.getText(RestaurantTable.selectedRow.cuisins)}}\n"
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "UImageUrl",
-                      "dynamicPropertyPathList": [],
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 28,
-                      "bottomRow": 37,
-                      "parentRowSpace": 10,
-                      "labelWidth": "9",
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 8.4375,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onTextChanged"
-                        }
-                      ],
-                      "resetOnSubmit": true,
-                      "leftColumn": 3,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "defaultText"
-                        },
-                        {
-                          "key": "validation"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "isDisabled": false,
-                      "key": "8z1whixclv",
-                      "validation": "{{UImageUrl.text.length>0}}",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": true,
-                      "onTextChanged": "{{storeValue('image_url',UImageUrl.text)}}",
-                      "isDeprecated": false,
-                      "rightColumn": 62,
-                      "widgetId": "bqyrxflz47",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "label": "Image url",
-                      "version": 2,
-                      "parentId": "ccuok3tnve",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "iconAlign": "left",
-                      "defaultText": "{{RestaurantTable.selectedRow.image_url}}"
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "UPhoneNumbers",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 19,
-                      "bottomRow": 28,
-                      "parentRowSpace": 10,
-                      "labelWidth": "12",
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 8.4375,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onTextChanged"
-                        }
-                      ],
-                      "resetOnSubmit": true,
-                      "leftColumn": 3,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "defaultText"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "isDisabled": false,
-                      "key": "8z1whixclv",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": true,
-                      "onTextChanged": "{{storeValue('phone_numbers',UPhoneNumbers.text)}}",
-                      "isDeprecated": false,
-                      "rightColumn": 62,
-                      "widgetId": "fspq7vom9o",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "label": "Phone numbers",
-                      "version": 2,
-                      "parentId": "ccuok3tnve",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "iconAlign": "left",
-                      "defaultText": "{{Utilities.getText(RestaurantTable.selectedRow.phone_numbers)}}"
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "UAddress",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 15,
-                      "bottomRow": 19,
-                      "parentRowSpace": 10,
-                      "labelWidth": "9",
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 8.4375,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onTextChanged"
-                        }
-                      ],
-                      "resetOnSubmit": true,
-                      "leftColumn": 3,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "defaultText"
-                        },
-                        {
-                          "key": "validation"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "isDisabled": false,
-                      "key": "8z1whixclv",
-                      "validation": "{{UAddress.text.length>0}}",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": true,
-                      "onTextChanged": "{{storeValue('address',UAddress.text)}}",
-                      "isDeprecated": false,
-                      "rightColumn": 62,
-                      "widgetId": "sbq9wlfua6",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "label": "Address",
-                      "version": 2,
-                      "parentId": "ccuok3tnve",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "iconAlign": "left",
-                      "defaultText": "{{RestaurantTable.selectedRow.address}}"
-                    },
-                    {
-                      "boxShadow": "none",
                       "widgetName": "UCloseIcon",
                       "onClick": "{{closeModal('UpdateModal')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -466,8 +92,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 1,
-                      "bottomRow": 5,
+                      "topRow": 0,
+                      "bottomRow": 4,
                       "type": "ICON_BUTTON_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -508,8 +134,8 @@
                         "typography",
                         "paragraph"
                       ],
-                      "topRow": 1,
-                      "bottomRow": 5,
+                      "topRow": 0,
+                      "bottomRow": 4,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
@@ -544,281 +170,743 @@
                       "fontSize": "1.875rem"
                     },
                     {
-                      "boxShadow": "none",
-                      "widgetName": "UCloseButton",
-                      "onClick": "{{closeModal('UpdateModal')}}",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "displayName": "Button",
-                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+                      "widgetName": "UpdateForm",
+                      "isCanvas": true,
+                      "displayName": "Form",
+                      "iconSVG": "/static/media/icon.ea3e08d130e59c56867ae40114c10eed.svg",
                       "searchTags": [
-                        "click",
-                        "submit"
+                        "group"
                       ],
-                      "topRow": 71,
-                      "bottomRow": 75,
-                      "type": "BUTTON_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "leftColumn": 28,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "buttonColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "text": "Close",
-                      "isDisabled": false,
-                      "key": "eqzf09fg8p",
-                      "isDeprecated": false,
-                      "rightColumn": 44,
-                      "isDefaultClickDisabled": true,
-                      "widgetId": "cazpvgvi49",
-                      "buttonStyle": "PRIMARY",
-                      "isVisible": true,
-                      "recaptchaType": "V3",
-                      "version": 1,
-                      "parentId": "ccuok3tnve",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "buttonVariant": "SECONDARY",
-                      "placement": "CENTER"
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "UConfirmButton",
-                      "onClick": "{{UpdateRestaurant.run(() => Utilities.closeModalAndRefresh('UpdateModal'), () => showAlert('Updating failed !!','error'))}}",
-                      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "onClick"
-                        }
-                      ],
-                      "displayName": "Button",
-                      "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
-                      "searchTags": [
-                        "click",
-                        "submit"
-                      ],
-                      "topRow": 71,
-                      "bottomRow": 75,
-                      "type": "BUTTON_WIDGET",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onClick"
-                        }
-                      ],
-                      "leftColumn": 46,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "buttonColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
-                      "text": "Confirm",
-                      "isDisabled": false,
-                      "key": "eqzf09fg8p",
-                      "isDeprecated": false,
-                      "rightColumn": 62,
-                      "isDefaultClickDisabled": true,
-                      "widgetId": "f378g3uo6a",
-                      "buttonStyle": "PRIMARY_BUTTON",
-                      "isVisible": true,
-                      "recaptchaType": "V3",
-                      "version": 1,
-                      "parentId": "ccuok3tnve",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "buttonVariant": "PRIMARY",
-                      "placement": "CENTER"
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "UName",
-                      "displayName": "Input",
-                      "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                      "searchTags": [
-                        "form",
-                        "text input",
-                        "number",
-                        "textarea"
-                      ],
-                      "topRow": 6,
-                      "bottomRow": 10,
+                      "topRow": 5,
+                      "bottomRow": 84,
                       "parentRowSpace": 10,
-                      "labelWidth": "9",
-                      "autoFocus": false,
-                      "type": "INPUT_WIDGET_V2",
-                      "hideCard": false,
-                      "animateLoading": true,
-                      "parentColumnSpace": 8.4375,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onTextChanged"
-                        }
-                      ],
-                      "resetOnSubmit": true,
-                      "leftColumn": 3,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "defaultText"
-                        },
-                        {
-                          "key": "validation"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "labelStyle": "",
-                      "inputType": "TEXT",
-                      "isDisabled": false,
-                      "key": "8z1whixclv",
-                      "validation": "{{UName.text.length >0}}",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": true,
-                      "onTextChanged": "{{storeValue('name',UName.text)}}",
-                      "isDeprecated": false,
-                      "rightColumn": 62,
-                      "widgetId": "c2zx454n5n",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "label": "Name",
-                      "version": 2,
-                      "parentId": "ccuok3tnve",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "iconAlign": "left",
-                      "defaultText": "{{RestaurantTable.selectedRow.name}}"
-                    },
-                    {
-                      "boxShadow": "none",
-                      "widgetName": "UActivities",
-                      "isFilterable": true,
-                      "displayName": "MultiSelect",
-                      "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
-                      "labelText": "Activities",
-                      "searchTags": [
-                        "dropdown",
-                        "tags"
-                      ],
-                      "topRow": 10,
-                      "bottomRow": 15,
-                      "parentRowSpace": 10,
-                      "labelWidth": "9",
-                      "type": "MULTI_SELECT_WIDGET_V2",
-                      "serverSideFiltering": false,
-                      "hideCard": false,
-                      "defaultOptionValue": "{{RestaurantTable.selectedRow.activity_ids}}",
-                      "animateLoading": true,
-                      "parentColumnSpace": 8.4375,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onOptionChange"
-                        }
-                      ],
-                      "leftColumn": 3,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
-                        {
-                          "key": "borderRadius"
-                        },
-                        {
-                          "key": "options"
-                        },
-                        {
-                          "key": "defaultOptionValue"
-                        }
-                      ],
-                      "labelPosition": "Left",
-                      "options": "{{GetActivities.data}}",
-                      "placeholderText": "Select option(s)",
-                      "isDisabled": false,
-                      "key": "bb3vu9cqpd",
-                      "labelTextSize": "0.875rem",
-                      "isRequired": false,
-                      "isDeprecated": false,
-                      "rightColumn": 62,
-                      "widgetId": "1jq0z8wlzi",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                      "isVisible": true,
-                      "version": 1,
-                      "parentId": "ccuok3tnve",
-                      "labelAlignment": "left",
-                      "renderMode": "CANVAS",
-                      "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "onOptionChange": "{{storeValue('activity_ids',UActivities.selectedOptionValues)}}"
-                    },
-                    {
-                      "widgetName": "UIsDeleted",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "defaultCheckedState"
-                        }
-                      ],
-                      "displayName": "Checkbox",
-                      "iconSVG": "/static/media/icon.aaab032b43383e4fa53ffc0ef40c90ef.svg",
-                      "searchTags": [
-                        "boolean"
-                      ],
-                      "topRow": 65,
-                      "bottomRow": 69,
-                      "parentRowSpace": 10,
-                      "type": "CHECKBOX_WIDGET",
-                      "alignWidget": "LEFT",
+                      "type": "FORM_WIDGET",
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 9.59375,
-                      "dynamicTriggerPathList": [
-                        {
-                          "key": "onCheckChange"
-                        }
-                      ],
                       "leftColumn": 3,
                       "dynamicBindingPathList": [
-                        {
-                          "key": "accentColor"
-                        },
                         {
                           "key": "borderRadius"
                         },
                         {
-                          "key": "defaultCheckedState"
+                          "key": "boxShadow"
                         }
                       ],
-                      "labelPosition": "Left",
-                      "onCheckChange": "{{storeValue('is_deleted',UIsDeleted.isChecked)}}",
-                      "isDisabled": false,
-                      "key": "38euv92xrr",
-                      "isRequired": false,
+                      "children": [
+                        {
+                          "boxShadow": "none",
+                          "widgetName": "Canvas2",
+                          "displayName": "Canvas",
+                          "topRow": 0,
+                          "bottomRow": 780,
+                          "parentRowSpace": 1,
+                          "type": "CANVAS_WIDGET",
+                          "canExtend": false,
+                          "hideCard": true,
+                          "minHeight": 400,
+                          "parentColumnSpace": 1,
+                          "leftColumn": 0,
+                          "dynamicBindingPathList": [
+                            {
+                              "key": "borderRadius"
+                            },
+                            {
+                              "key": "accentColor"
+                            }
+                          ],
+                          "children": [
+                            {
+                              "resetFormOnClick": false,
+                              "boxShadow": "none",
+                              "widgetName": "USubmitButton",
+                              "onClick": "{{UpdateRestaurant.run(() => closeModal('UpdateModal'), () => showAlert('Update Failed!','error'))}}",
+                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "displayName": "FormButton",
+                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                              "topRow": 72,
+                              "bottomRow": 76,
+                              "type": "FORM_BUTTON_WIDGET",
+                              "hideCard": true,
+                              "animateLoading": true,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 47,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "buttonColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "text": "Submit",
+                              "key": "sg479xq7mb",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "isDefaultClickDisabled": true,
+                              "widgetId": "rn74stjzco",
+                              "isVisible": true,
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "ykxzx4kmge",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "disabledWhenInvalid": true,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "buttonVariant": "PRIMARY"
+                            },
+                            {
+                              "resetFormOnClick": true,
+                              "boxShadow": "none",
+                              "widgetName": "UResetButton",
+                              "onClick": "",
+                              "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "displayName": "FormButton",
+                              "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
+                              "topRow": 72,
+                              "bottomRow": 76,
+                              "type": "FORM_BUTTON_WIDGET",
+                              "hideCard": true,
+                              "animateLoading": true,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
+                              "leftColumn": 29,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "buttonColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "text": "Reset",
+                              "key": "sg479xq7mb",
+                              "isDeprecated": false,
+                              "rightColumn": 45,
+                              "isDefaultClickDisabled": true,
+                              "widgetId": "53gd50o5y8",
+                              "isVisible": true,
+                              "recaptchaType": "V3",
+                              "version": 1,
+                              "parentId": "ykxzx4kmge",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "disabledWhenInvalid": true,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "buttonVariant": "SECONDARY"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "UPhoneNumbers",
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "topRow": 17,
+                              "bottomRow": 26,
+                              "parentRowSpace": 10,
+                              "labelWidth": "12",
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET_V2",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 8.4375,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultText"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": false,
+                              "key": "8z1whixclv",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": true,
+                              "onTextChanged": "{{storeValue('phone_numbers',UPhoneNumbers.text)}}",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "widgetId": "fspq7vom9o",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "label": "Phone numbers",
+                              "version": 2,
+                              "parentId": "ykxzx4kmge",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "regex": "",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "iconAlign": "left",
+                              "defaultText": "{{Utilities.getText(RestaurantTable.selectedRow.phone_numbers)}}"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "UPriceRange",
+                              "dynamicPropertyPathList": [],
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "topRow": 37,
+                              "bottomRow": 46,
+                              "parentRowSpace": 10,
+                              "labelWidth": "12",
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET_V2",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 8.4375,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultText"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": false,
+                              "key": "8z1whixclv",
+                              "validation": "",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": true,
+                              "onTextChanged": "{{storeValue('price_range',UPriceRange.text)}}",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "widgetId": "apldhpwp9h",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "label": "Price range",
+                              "version": 2,
+                              "parentId": "ykxzx4kmge",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "iconAlign": "left",
+                              "defaultText": "{{RestaurantTable.selectedRow.price_range}}"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "UImageUrl",
+                              "dynamicPropertyPathList": [],
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "topRow": 27,
+                              "bottomRow": 36,
+                              "tooltip": "Url pattern should be - http://www.example.com, https://www.example.com, www.example.com",
+                              "parentRowSpace": 10,
+                              "labelWidth": "10",
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET_V2",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 8.4375,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultText"
+                                },
+                                {
+                                  "key": "validation"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": false,
+                              "key": "8z1whixclv",
+                              "validation": "{{UImageUrl.text.length>3}}",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": true,
+                              "onTextChanged": "{{storeValue('image_url',UImageUrl.text)}}",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "widgetId": "bqyrxflz47",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "errorMessage": "Image url is not valid",
+                              "isVisible": true,
+                              "label": "Image url",
+                              "version": 2,
+                              "parentId": "ykxzx4kmge",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "iconAlign": "left",
+                              "defaultText": "{{RestaurantTable.selectedRow.image_url}}"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "UZomatoUrl",
+                              "dynamicPropertyPathList": [],
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "topRow": 47,
+                              "bottomRow": 56,
+                              "tooltip": "Url pattern should be - http://www.example.com, https://www.example.com, www.example.com",
+                              "parentRowSpace": 10,
+                              "labelWidth": "10",
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET_V2",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 8.4375,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultText"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": false,
+                              "key": "8z1whixclv",
+                              "validation": "",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": true,
+                              "onTextChanged": "{{storeValue('zomato_url',UZomatoUrl.text)}}",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "widgetId": "ebowbtv7h6",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "errorMessage": "Url pattern should be - http://www.example.com, https://www.example.com, www.example.com",
+                              "isVisible": true,
+                              "label": "Zomato url",
+                              "version": 2,
+                              "parentId": "ykxzx4kmge",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "regex": "(https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|www\\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\\.[^\\s]{2,}|https?:\\/\\/(?:www\\.|(?!www))[a-zA-Z0-9]+\\.[^\\s]{2,}|www\\.[a-zA-Z0-9]+\\.[^\\s]{2,})",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "iconAlign": "left",
+                              "defaultText": "{{RestaurantTable.selectedRow.zomato_url}}"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "UCuisins",
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "topRow": 57,
+                              "bottomRow": 66,
+                              "tooltip": "Cuisins can have alphanumeric_,-@$# and min length 2 ",
+                              "parentRowSpace": 10,
+                              "labelWidth": "10",
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET_V2",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 8.4375,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultText"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": false,
+                              "key": "8z1whixclv",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": true,
+                              "onTextChanged": "{{storeValue('cuisins',UCuisins.text)}}",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "widgetId": "kxhyd5tv6o",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "errorMessage": "Cuisins can have alphanumeric_,-@$# and min length 2 ",
+                              "isVisible": true,
+                              "label": "Cuisins",
+                              "version": 2,
+                              "parentId": "ykxzx4kmge",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "regex": "^([A-Za-z0-9_ ,-@$#]{2,})+$",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "iconAlign": "left",
+                              "defaultText": "{{Utilities.getText(RestaurantTable.selectedRow.cuisins)}}\n"
+                            },
+                            {
+                              "widgetName": "UIsDeleted",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "defaultCheckedState"
+                                }
+                              ],
+                              "displayName": "Checkbox",
+                              "iconSVG": "/static/media/icon.aaab032b43383e4fa53ffc0ef40c90ef.svg",
+                              "searchTags": [
+                                "boolean"
+                              ],
+                              "topRow": 67,
+                              "bottomRow": 71,
+                              "parentRowSpace": 10,
+                              "type": "CHECKBOX_WIDGET",
+                              "alignWidget": "LEFT",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.59375,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onCheckChange"
+                                }
+                              ],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultCheckedState"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "onCheckChange": "{{storeValue('is_deleted',UIsDeleted.isChecked)}}",
+                              "isDisabled": false,
+                              "key": "38euv92xrr",
+                              "isRequired": false,
+                              "isDeprecated": false,
+                              "rightColumn": 17,
+                              "widgetId": "0kf1i7wme0",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "label": "Is deleted",
+                              "version": 1,
+                              "parentId": "ykxzx4kmge",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "defaultCheckedState": "{{RestaurantTable.selectedRow.is_deleted}}"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "UAddress",
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "topRow": 12,
+                              "bottomRow": 16,
+                              "tooltip": "Addresss can have aplanumeric_,-@# and min length 3 ",
+                              "parentRowSpace": 10,
+                              "labelWidth": "10",
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET_V2",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 8.4375,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultText"
+                                },
+                                {
+                                  "key": "validation"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "isDisabled": false,
+                              "key": "8z1whixclv",
+                              "validation": "{{UAddress.text.length>3}}",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": true,
+                              "onTextChanged": "{{storeValue('address',UAddress.text)}}",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "widgetId": "sbq9wlfua6",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "errorMessage": "Addresss can have aplanumeric_,-@# and min length 3",
+                              "isVisible": true,
+                              "label": "Address",
+                              "version": 2,
+                              "parentId": "ykxzx4kmge",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "regex": "^([A-Za-z0-9_, -@#]{2,})+$",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "iconAlign": "left",
+                              "defaultText": "{{RestaurantTable.selectedRow.address}}"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "UActivities",
+                              "isFilterable": true,
+                              "dynamicPropertyPathList": [],
+                              "displayName": "MultiSelect",
+                              "iconSVG": "/static/media/icon.a3495809ae48291a64404f3bb04b0e69.svg",
+                              "labelText": "Activities",
+                              "searchTags": [
+                                "dropdown",
+                                "tags"
+                              ],
+                              "topRow": 6,
+                              "bottomRow": 11,
+                              "parentRowSpace": 10,
+                              "labelWidth": "12",
+                              "type": "MULTI_SELECT_WIDGET_V2",
+                              "serverSideFiltering": false,
+                              "hideCard": false,
+                              "defaultOptionValue": "{{RestaurantTable.selectedRow.activity_ids}}",
+                              "animateLoading": true,
+                              "parentColumnSpace": 8.4375,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onOptionChange"
+                                }
+                              ],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "options"
+                                },
+                                {
+                                  "key": "defaultOptionValue"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "options": "{{GetActivities.data}}",
+                              "placeholderText": "Select option(s)",
+                              "isDisabled": false,
+                              "key": "bb3vu9cqpd",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": true,
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "widgetId": "1jq0z8wlzi",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "ykxzx4kmge",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "onOptionChange": "{{storeValue('activity_ids',UActivities.selectedOptionValues)}}"
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "UName",
+                              "displayName": "Input",
+                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
+                              "searchTags": [
+                                "form",
+                                "text input",
+                                "number",
+                                "textarea"
+                              ],
+                              "topRow": 1,
+                              "bottomRow": 5,
+                              "tooltip": "Name should be unique, can have alphanumeric_,-@$# and min length 2",
+                              "parentRowSpace": 10,
+                              "labelWidth": "10",
+                              "autoFocus": false,
+                              "type": "INPUT_WIDGET_V2",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 8.4375,
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onTextChanged"
+                                }
+                              ],
+                              "resetOnSubmit": true,
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultText"
+                                },
+                                {
+                                  "key": "validation"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "labelStyle": "",
+                              "inputType": "TEXT",
+                              "maxChars": "255",
+                              "isDisabled": false,
+                              "key": "8z1whixclv",
+                              "validation": "{{GetRestaurants.data.filter(r => r.name == UName.text && r.id != RestaurantTable.selectedRow.id).length == 0}}",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": true,
+                              "onTextChanged": "{{storeValue('name',UName.text)}}",
+                              "isDeprecated": false,
+                              "rightColumn": 63,
+                              "widgetId": "c2zx454n5n",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "errorMessage": "Name should be unique, can have alphanumeric_,-@$# and min length 2",
+                              "isVisible": true,
+                              "label": "Name",
+                              "version": 2,
+                              "parentId": "ykxzx4kmge",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "regex": "^([A-Za-z0-9_, -@$#]{2,})+$",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "iconAlign": "left",
+                              "defaultText": "{{RestaurantTable.selectedRow.name}}"
+                            }
+                          ],
+                          "key": "fduzk10sga",
+                          "isDeprecated": false,
+                          "rightColumn": 230.25,
+                          "detachFromLayout": true,
+                          "widgetId": "ykxzx4kmge",
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "containerStyle": "none",
+                          "isVisible": true,
+                          "version": 1,
+                          "parentId": "e0xjk5hw4p",
+                          "renderMode": "CANVAS",
+                          "isLoading": false,
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        }
+                      ],
+                      "key": "82vf24kdbl",
+                      "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 20,
-                      "widgetId": "0kf1i7wme0",
-                      "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                      "rightColumn": 61,
+                      "widgetId": "e0xjk5hw4p",
                       "isVisible": true,
-                      "label": "Is deleted",
-                      "version": 1,
                       "parentId": "ccuok3tnve",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                      "defaultCheckedState": "{{RestaurantTable.selectedRow.is_deleted}}"
+                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
                     }
                   ],
                   "isDisabled": false,
@@ -837,7 +925,7 @@
                 }
               ],
               "key": "yeavflwp35",
-              "height": 696,
+              "height": 600,
               "isDeprecated": false,
               "rightColumn": 44,
               "detachFromLayout": true,
@@ -848,8 +936,9 @@
               "parentId": "0",
               "renderMode": "CANVAS",
               "isLoading": false,
+              "onClose": "{{GetRestaurants.run()}}",
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "width": 626
+              "width": 736
             },
             {
               "boxShadow": "none",
@@ -1896,7 +1985,7 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "IActivities",
+                          "label": "Activities",
                           "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.activities))}}"
                         },
                         "name": {
@@ -1914,7 +2003,7 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "IName",
+                          "label": "Name",
                           "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.name))}}",
                           "cellBackground": ""
                         },
@@ -1933,7 +2022,7 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "IAddress",
+                          "label": "Address",
                           "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.address))}}",
                           "cellBackground": ""
                         },
@@ -1990,7 +2079,7 @@
                           "isDisabled": false,
                           "isCellVisible": true,
                           "isDerived": false,
-                          "label": "ICuisins",
+                          "label": "Cuisins",
                           "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.cuisins))}}",
                           "cellBackground": ""
                         },
@@ -2229,6 +2318,16 @@
           ],
           [
             {
+              "id": "Page1_GetRestaurantsCount",
+              "name": "GetRestaurantsCount",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
               "id": "Page1_GetRestaurants",
               "name": "GetRestaurants",
               "confirmBeforeExecute": false,
@@ -2238,14 +2337,6 @@
                 "RestaurantTable.searchText",
                 "RestaurantTable.pageNo - 1"
               ],
-              "timeoutInMillisecond": 10000
-            },
-            {
-              "id": "Page1_GetRestaurantsCount",
-              "name": "GetRestaurantsCount",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]
