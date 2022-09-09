@@ -11,6 +11,12 @@
   "clonedFromApplicationId": "62d3d0419a04633267d74926",
   "color": "#F5D1D1",
   "icon": "sunflower",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
+    "type": "FLUID"
+  },
   "evaluationVersion": 2,
   "applicationVersion": 2,
   "isManualUpdate": false,
