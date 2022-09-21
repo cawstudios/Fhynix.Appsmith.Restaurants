@@ -1919,6 +1919,18 @@
                         },
                         {
                           "key": "primaryColumns.is_deleted.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.created_at_utc.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.created_by.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.updated_at_utc.computedValue"
+                        },
+                        {
+                          "key": "primaryColumns.updated_by.computedValue"
                         }
                       ],
                       "leftColumn": 0,
@@ -1968,6 +1980,10 @@
                         "zomato_url",
                         "price_range",
                         "activities",
+                        "created_at_utc",
+                        "updated_at_utc",
+                        "created_by",
+                        "updated_by",
                         "is_deleted"
                       ],
                       "dynamicPropertyPathList": [],
@@ -2222,6 +2238,82 @@
                           "isDerived": false,
                           "label": "Is deleted",
                           "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.is_deleted))}}",
+                          "cellBackground": ""
+                        },
+                        "created_at_utc": {
+                          "index": 6,
+                          "width": 150,
+                          "id": "created_at_utc",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Created at utc",
+                          "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.created_at_utc))}}",
+                          "cellBackground": ""
+                        },
+                        "created_by": {
+                          "index": 7,
+                          "width": 150,
+                          "id": "created_by",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Created by",
+                          "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.created_by))}}",
+                          "cellBackground": ""
+                        },
+                        "updated_at_utc": {
+                          "index": 8,
+                          "width": 150,
+                          "id": "updated_at_utc",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Updated at utc",
+                          "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.updated_at_utc))}}",
+                          "cellBackground": ""
+                        },
+                        "updated_by": {
+                          "index": 9,
+                          "width": 150,
+                          "id": "updated_by",
+                          "horizontalAlignment": "CENTER",
+                          "verticalAlignment": "CENTER",
+                          "columnType": "text",
+                          "textColor": "",
+                          "textSize": "0.875rem",
+                          "enableFilter": true,
+                          "enableSort": true,
+                          "isVisible": true,
+                          "isDisabled": false,
+                          "isCellVisible": true,
+                          "isDerived": false,
+                          "label": "Updated by",
+                          "computedValue": "{{RestaurantTable.sanitizedTableData.map((currentRow) => ( currentRow.updated_by))}}",
                           "cellBackground": ""
                         }
                       },
